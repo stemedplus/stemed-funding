@@ -144,6 +144,9 @@
     <div class="join join-bottom" role="note"><p><strong>STEMEd+ Funding is part of STEMEd+ Commons</strong>, which brings together teachers, researchers, and learning professionals from every field to share work, find each other, and build what comes next. Join to set up your profile, add papers, posters, slides, and other work to the <a href="https://works.hcommons.org/collections/stemedplus/" target="_blank" rel="noopener noreferrer">STEMEd+ Library<span class="vh"> (opens in a new tab)</span></a> with a DOI, share datasets in <a href="https://works.hcommons.org/collections/stemedplus-data/" target="_blank" rel="noopener noreferrer">STEMEd+ Data<span class="vh"> (opens in a new tab)</span></a>, and connect with teachers and researchers across fields. You can sign in through your institution, ORCID, or another provider.</p><p><a href="https://stemedplus.org/" target="_blank" rel="noopener noreferrer">Visit STEMEd+ Commons<span class="vh"> (opens in a new tab)</span></a> · <a href="https://stemedplus.org/join-stemed/" target="_blank" rel="noopener noreferrer">Join STEMEd+<span class="vh"> (opens in a new tab)</span></a></p></div>
     <h2><a id="morehead" href="https://stemedplus.hcommons.org/">More from STEMEd+ Commons</a></h2>
     <ul id="related"></ul>
+    <h2 id="communityhead" hidden>Other community resources</h2>
+    <p id="communitynote" hidden>Run by other organizations; we link to them because they are useful.</p>
+    <ul id="community" hidden></ul>
     <p>Funded work to share? Add papers, instruments, lesson plans, and data to the <a id="commons" href="#">STEMEd+ Commons</a>.</p>
     <details id="reviewbox" hidden><summary id="reviewsum">For maintainers</summary><ul id="reviewlist"></ul></details>
     <p><a id="repo" href="#">About this site</a> · <span id="updated"></span></p>
@@ -309,6 +312,8 @@
     el('icsurl').textContent = ics;
     el('copyics').addEventListener('click', function () { navigator.clipboard && navigator.clipboard.writeText(ics); el('copyics').textContent = 'Copied'; });
     site.related.forEach(function (r) { var li = document.createElement('li'); li.appendChild(link(r.url, r.name)); li.appendChild(document.createTextNode(': ' + r.about)); el('related').appendChild(li); });
+    (site.community || []).forEach(function (r) { var li = document.createElement('li'); li.appendChild(link(r.url, r.name)); li.appendChild(document.createTextNode(': ' + r.about)); el('community').appendChild(li); });
+    if ((site.community || []).length) { el('communityhead').hidden = el('communitynote').hidden = el('community').hidden = false; }
     var fed = d.items.filter(function (i) { return i.source === 'federal'; }).length;
     el('fedcount').textContent = fed; el('curcount').textContent = d.items.length - fed;
     var bad = d.status.filter(function (s) { return !s.ok; });

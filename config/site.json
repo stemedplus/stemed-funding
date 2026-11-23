@@ -41,5 +41,12 @@
       "about": "positions in STEM+ education"
     }
   ],
-  "feed_size": 100
+  "feed_size": 100,
+  "community": [
+    {
+      "name": "Pathways to Science",
+      "url": "https://www.pathwaystoscience.org/",
+      "about": "programs, fellowships, and research opportunities for students, from the Institute for Broadening Participation"
+    }
+  ]
 }
