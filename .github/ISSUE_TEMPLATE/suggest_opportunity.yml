@@ -45,10 +45,13 @@ body:
       label: Disciplines (leave blank if open to all STEM+ fields)
       options:
         - label: Agriculture
+        - label: Astronomy & Space Science
         - label: Bioscience
         - label: Chemistry
+        - label: Computing
         - label: Earth Science
-        - label: Engineering (including computing)
+        - label: Engineering
+        - label: Environmental Science
         - label: Health Education
         - label: History & Philosophy of Science (including history of medicine and science and technology studies)
         - label: Human Dimensions (including human dimensions of natural resources, forestry, wildlife, and climate change)

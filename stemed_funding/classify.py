@@ -20,8 +20,9 @@ NOT_STEM = re.compile(
 WORD_DISCIPLINES = (
     ("Mathematics", re.compile(r"\bmaths?\b|\bmathematical\b|\bgeometr(?:y|ic|ical)\b|\balgebra\w*|\bcalculus\b"
                                r"|\bfractions?\b|\bnumeracy\b|\barithmetic\b|\bstatistical\b|\bdata science\b", re.IGNORECASE)),
-    ("Engineering", re.compile(r"\bcomputer science\b|\bcomputing\b|\bcomputational thinking\b|\bprogramming\b"
-                               r"|\bcoding\b|\brobotics\b|\bcyber\w*", re.IGNORECASE)),
+    ("Computing", re.compile(r"\bcomputer science\b|\bcomputing\b|\bcomputational thinking\b|\bprogramming\b"
+                             r"|\bcoding\b|\bcyber\w*", re.IGNORECASE)),
+    ("Engineering", re.compile(r"\brobotics\b", re.IGNORECASE)),
     ("Health Education", re.compile(r"\bbiomedical\b|\bclinical\b|\bpatients?\b", re.IGNORECASE)),
 )
 
@@ -49,9 +50,9 @@ KINDS = (
                                                   r"|\bcommunity\b|\bpartnership award\b", re.IGNORECASE)),
 )
 KIND_NAMES = tuple(name for name, _ in KINDS)
-# Small grants and awards for teachers and instructors. Only curated listings carry these; the
+# Small grants and travel support for teachers and instructors. Only curated listings carry these; the
 # Grants.gov classifier never assigns them, because federal awards are not classroom mini-grants.
-TEACHER_KINDS = ("Classroom grants", "Teaching awards", "Teaching travel and professional development")
+TEACHER_KINDS = ("Classroom grants", "Teaching travel and professional development")
 
 
 def plain(text: str) -> str:

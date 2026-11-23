@@ -25,8 +25,8 @@ The focus is the United States. Disciplines use the same categories as
 |---|---|
 | **Website** | Search and filter by funder type, funder, discipline, what it funds (research, teaching and curriculum, students and training, early career, K-12 and teachers, institutional capacity, broadening participation, outreach), status, and how soon the deadline is. Deadlines are color-coded by how close they are, and "Closing in the next 30 days" is at the top. "Copy link to this view" shares any filtered view. |
 | **Deadline calendar** | [`feeds/deadlines.ics`](https://stemedplus.github.io/stemed-funding/feeds/deadlines.ics) has every dated deadline. Subscribe in Google Calendar, Outlook, or Apple Calendar ("add calendar from URL") and new deadlines appear on their own. Each listing also has an "Add to calendar" link for just that deadline. |
-| **RSS** | [`feeds/new.xml`](https://stemedplus.github.io/stemed-funding/feeds/new.xml) lists newly added opportunities; [`feeds/teachers.xml`](https://stemedplus.github.io/stemed-funding/feeds/teachers.xml) lists only the small grants and awards for teachers and instructors. |
-| **For teachers and instructors** | Three categories under "What it funds" cover small grants and awards for individual teachers and instructors, K-12 through college: **Classroom grants** (mini-grants for classroom projects, equipment, and materials, such as ACS-Hach, Toshiba America Foundation, and NEA Foundation), **Teaching awards** (NSTA, NABT, MAA Haimo, ASM Carski, APS, PhysTEC), and **Teaching travel and professional development** (ACS-Hach Professional Development, NAGT Stout grants, Fund for Teachers, ASMCUE travel awards). "For teachers and instructors" in the same menu, or the header button, shows all three. Only hand-kept listings carry these categories; Grants.gov listings are never put in them. |
+| **RSS** | [`feeds/new.xml`](https://stemedplus.github.io/stemed-funding/feeds/new.xml) lists newly added opportunities; [`feeds/teachers.xml`](https://stemedplus.github.io/stemed-funding/feeds/teachers.xml) lists only the small grants and travel support for teachers and instructors. |
+| **For teachers and instructors** | Two categories under "What it funds" cover small grants for individual teachers and instructors, K-12 through college: **Classroom grants** (mini-grants for classroom projects, equipment, and materials, such as ACS-Hach, Toshiba America Foundation, and NEA Foundation) and **Teaching travel and professional development** (ACS-Hach Professional Development, NAGT Stout grants, Fund for Teachers, ASMCUE travel awards). "For teachers and instructors" in the same menu, or the header button, shows both. Teaching and education awards (NSTA, NABT, PAEMST, MAA Haimo, and many more) moved to [STEMEd+ Awards](https://github.com/stemedplus/stemed-awards). Only hand-kept listings carry these categories; Grants.gov listings are never put in them. |
 
 The site updates itself every day. Deadlines and rules change, so always confirm on the funder's
 page before applying; every listing links there.
@@ -129,6 +129,6 @@ repository never needs data commits. Turn it on once in **Settings → Pages →
 
 Code: MIT. Listings in `opportunities/`: [CC BY 4.0](opportunities/LICENSE.md). The disciplines
 (labels, definitions, and matching words) come from the STEMEd+ discipline list shared across
-STEMEd+ Commons, kept in the [HuMeta profile](https://github.com/stemedplus/humeta-profile)
+STEMEd+ Commons, kept in [stemedplus-theme](https://github.com/stemedplus/stemedplus-theme)
 (`stemedplus_disciplines.json`) and stored here as
 `stemed_funding/stemedplus_disciplines.json`; each build refreshes the stored copy.

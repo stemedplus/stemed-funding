@@ -6,7 +6,7 @@
 <title>STEMEd+ Funding</title>
 <meta name="description" content="Open calls and deadlines for STEM+ teaching and STEM+ education research: federal agencies, foundations, professional societies, and state programs, in one place.">
 <link rel="alternate" type="application/rss+xml" title="Newly listed funding" href="feeds/new.xml">
-<link rel="alternate" type="application/rss+xml" title="Small grants and awards for teachers and instructors" href="feeds/teachers.xml">
+<link rel="alternate" type="application/rss+xml" title="Small grants and travel support for teachers and instructors" href="feeds/teachers.xml">
 <style>
   :root { --ink:#1d2433; --muted:#5b6475; --line:#dde2ea; --bg:#f7f8fa; --card:#fff; --accent:#1f5f8b; --soft:#e6f0f7; --softline:#c9dcea;
           --soon:#a3261b; --soonbg:#fdecea; --mid:#7a4f00; --midbg:#fdf3dc; --ok:#1f6b3a; --okbg:#e7f4ec; }
@@ -84,7 +84,7 @@
     <p id="tagline"></p>
     <div class="links">
       <a class="btn" href="#calendar">Deadline calendar</a>
-      <a class="btn secondary" href="#kind=teachers&amp;status=" id="teachersbtn">Small grants and awards for teachers</a>
+      <a class="btn secondary" href="#kind=teachers&amp;status=" id="teachersbtn">Small grants for teachers</a>
       <a class="btn secondary" href="feeds/new.xml">New listings (RSS)</a>
       <a class="btn secondary" id="suggest" href="#add">Suggest an opportunity</a>
     </div>
@@ -140,7 +140,7 @@
     <h2 id="add">Add or correct a listing</h2>
     <p>Know a program we are missing, or see something out of date? <a id="suggest2" href="#">Suggest an opportunity</a> or <a id="update" href="#">report a correction</a> on GitHub, or use our <a href="https://stemedplus.org/contact-us/">contact form</a> and include the program's name, the funder's page, and the deadline. For a correction, name the program you are correcting.</p>
     <h2>RSS</h2>
-    <p><a href="feeds/new.xml">Newly listed opportunities</a> and <a href="feeds/teachers.xml">small grants and awards for teachers and instructors</a>, for feed readers.</p>
+    <p><a href="feeds/new.xml">Newly listed opportunities</a> and <a href="feeds/teachers.xml">small grants and travel support for teachers and instructors</a>, for feed readers. Teaching and education awards are on <a href="https://stemedplus.github.io/stemed-awards/">STEMEd+ Awards</a>.</p>
     <div class="join join-bottom" role="note"><p><strong>STEMEd+ Funding is part of STEMEd+ Commons</strong>, which brings together teachers, researchers, and learning professionals from every field to share work, find each other, and build what comes next. Join to set up your profile, add papers, posters, slides, and other work to the <a href="https://works.hcommons.org/collections/stemedplus/" target="_blank" rel="noopener noreferrer">STEMEd+ Library<span class="vh"> (opens in a new tab)</span></a> with a DOI, share datasets in <a href="https://works.hcommons.org/collections/stemedplus-data/" target="_blank" rel="noopener noreferrer">STEMEd+ Data<span class="vh"> (opens in a new tab)</span></a>, and connect with teachers and researchers across fields. You can sign in through your institution, ORCID, or another provider.</p><p><a href="https://stemedplus.org/" target="_blank" rel="noopener noreferrer">Visit STEMEd+ Commons<span class="vh"> (opens in a new tab)</span></a> · <a href="https://stemedplus.org/join-stemed/" target="_blank" rel="noopener noreferrer">Join STEMEd+<span class="vh"> (opens in a new tab)</span></a></p></div>
     <h2><a id="morehead" href="https://stemedplus.hcommons.org/">More from STEMEd+ Commons</a></h2>
     <ul id="related"></ul>
@@ -296,7 +296,7 @@
     fill(el('sponsor'), sponsors.sort(function (a, b) { return a.localeCompare(b); }));
     fill(el('discipline'), d.disciplines);
     fill(el('kind'), d.kinds);
-    var tk = node('option', '', 'For teachers and instructors: grants, awards, and travel'); tk.value = 'teachers';
+    var tk = node('option', '', 'For teachers and instructors: classroom grants and travel'); tk.value = 'teachers';
     el('kind').insertBefore(tk, el('kind').options[1]);
     readHash();
     el('teachersbtn').addEventListener('click', function (e) { e.preventDefault(); el('kind').value = 'teachers'; el('status').value = ''; changed(); el('list').scrollIntoView(); });

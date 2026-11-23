@@ -86,7 +86,7 @@ class FederalTests(unittest.TestCase):
         self.assertTrue(any(t.startswith("NSF STEM K-12") for t in titles))
 
     def test_disciplines_from_title(self):
-        self.assertEqual(by_title(self.items, "Research Experiences for Teachers")["disciplines"], ["Engineering"])
+        self.assertEqual(by_title(self.items, "Research Experiences for Teachers")["disciplines"], ["Computing", "Engineering"])
         self.assertTrue(by_title(self.items, "NSF Scholarships in Science")["all_fields"])     # spelled-out STEM
         self.assertEqual(by_title(self.items, "Hispanic-Serving Institutions")["disciplines"], ["Agriculture"])
 

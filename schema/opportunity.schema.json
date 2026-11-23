@@ -24,12 +24,12 @@
       "type": "array", "uniqueItems": true,
       "items": {"enum": ["Research", "Teaching and curriculum", "Students and training", "Early career", "K-12 and teachers",
                          "Institutional capacity", "Broadening participation", "Outreach and informal learning",
-                         "Classroom grants", "Teaching awards", "Teaching travel and professional development"]},
-      "description": "The last three are for teachers and instructors: classroom mini-grants, teaching awards, and support to travel to teaching workshops and conferences or for other professional learning."
+                         "Classroom grants", "Teaching travel and professional development"]},
+      "description": "The last two are for teachers and instructors: classroom mini-grants, and support to travel to teaching workshops and conferences or for other professional learning. Teaching and education awards are listed on STEMEd+ Awards (stemed-awards), not here."
     },
     "disciplines": {
       "type": "array", "uniqueItems": true,
-      "description": "Leave empty for programs open to all STEM+ fields. Labels from the STEMEd+ discipline list (stemed_funding/stemedplus_disciplines.json, kept in HuMeta); the build checks them against that list.",
+      "description": "Leave empty for programs open to all STEM+ fields. Labels from the STEMEd+ discipline list (stemed_funding/stemedplus_disciplines.json, kept in stemedplus-theme); the build checks them against that list.",
       "items": {"type": "string"}
     },
     "states": {
